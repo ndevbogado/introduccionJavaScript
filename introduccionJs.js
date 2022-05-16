@@ -79,3 +79,34 @@ constanteCompuesta.push("la longitud de constantes compuestas es variable");
 constanteCompuesta.push("El tipo de objeto no cambia, más allá que lo modifiqué");
 
 console.log(constanteCompuesta);
+
+
+/* 
+#############################################################################################
+#                                     VARIABLES PRIMITIVAS                                  #
+#############################################################################################
+*/
+
+// STRING ----------------------------------------------------------------------------------
+
+let lastName = "Bogado D.";
+let firstName = 'Nahuel';
+
+let lorem = 
+"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat omnis atque recusandae eaque odit accusamus nostrum mollitia minima enim? Repellat?";
+console.log(lorem);
+
+lastName = lastName.toLowerCase();
+firstName = firstName.toUpperCase();
+console.log(
+    lastName,
+    firstName,
+    lorem.includes("?"),
+    lorem.trim(),
+    lorem.split("l")
+    );
+
+// INTERPOLACION DE VARIABLES
+console.log("Hola mi nombre es " + lastName + " " + firstName + ".");
+
+console.log(`Hola mi nombre es ${lastName} ${firstName}.`);
