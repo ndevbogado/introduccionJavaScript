@@ -131,3 +131,19 @@ console.log(parseInt(numeroFloat)); //Método con el cual se obtiene la parte en
 console.log(numeroInt + numeroFloat);
 console.log(numeroInt + stringifiedNumber);
 console.log(numeroInt + parseFloat(stringifiedNumber));
+
+
+// BOOLEAN ----------------------------------------------------------------------------------
+// Los valores Trusthy y falsy son valores que tienden a verdaderos o falsos (buscar en mdn).
+
+let verdadero = true;
+let falso = false;
+
+// DATOS PROPIOS DE JAVASCRIPT --------------------------------------------------------
+
+let indefinida; //undefined: variable vacia asignada por JavaScript (la variable no se ha ini
+// cializado y por lo tanto el valor está ausente).
+let nulo = null; //variable vacia intencionalmente por el programador
+
+let noEsUnNumero = "hola" * 2;
+console.log(noEsUnNumero);
