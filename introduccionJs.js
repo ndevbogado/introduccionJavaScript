@@ -147,3 +147,59 @@ let nulo = null; //variable vacia intencionalmente por el programador
 
 let noEsUnNumero = "hola" * 2;
 console.log(noEsUnNumero);
+
+
+/* 
+#############################################################################################
+#                                     VARIABLES COMPUESTAS                                  #
+#############################################################################################
+*/
+
+// FUNCIONES ---------------------------------------------------------------------------
+
+/*
+Una Funcion es un bloque de código que es declarado solo una vez y puede reutilizarse o 
+ejecutarse las veces requeridas. Puede recibir y devolver valores.
+*/ 
+
+//Declaracion de funciones
+
+function estoEsUnaFuncion(){
+
+    console.log("uno");
+
+    console.log("dos");
+    
+    console.log("tres");
+
+    console.log("CUATROOOOO");
+
+    return ("Esta función ha retornado una línea de texto");
+
+}
+
+//Expresión de funciones: MEJOR PRÁCTICA
+
+// funcionExpresada();
+const funcionExpresada = function(){
+    console.log("Esto es una funcion expresada, es decir, una funcion que se le ha asignado como valor a una variable, si invocamos a esta función antes de su definición Js nos dirá un error.");
+}
+
+//Invocación de una Función
+
+const valorDeFuncion = estoEsUnaFuncion();
+
+console.log(valorDeFuncion);
+
+saludar ("Nahuel D. Bogado", 24);
+
+function saludar(nombre, edad){
+    console.log(`Hola, mi nombre es ${nombre} y tengo ${edad} años.`);
+}
+
+
+/*
+NOTA IMPORTANTE: JS realiza un hoisting en tiempo de ejecución, por lo que esto afecta a todas
+las funciones declaradas en el código, las cuales pueden ser inicializadas antes de su decla
+racion a través de este sistema.
+*/
