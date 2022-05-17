@@ -110,3 +110,24 @@ console.log(
 console.log("Hola mi nombre es " + lastName + " " + firstName + ".");
 
 console.log(`Hola mi nombre es ${lastName} ${firstName}.`);
+
+
+// NUMBER ----------------------------------------------------------------------------------
+
+/*
+En JavaScript no hay distinción de tipos de números: ya sea float, int, decimal, etc.
+Todos recaen en la categoría de 'number'. Los formularios que recibe JS, debo realizar un 
+"Casting" de datos, o una conversión del tipo de dato.
+*/
+
+let numeroInt = 10;
+let numeroFloat = 10.01;
+let stringifiedNumber = "10";
+
+console.log(numeroFloat.toFixed(5)); // Método con el que se muestra el número con una cantidad
+                                    // de cifras significativas
+console.log(parseInt(numeroFloat)); //Método con el cual se obtiene la parte entera del float
+
+console.log(numeroInt + numeroFloat);
+console.log(numeroInt + stringifiedNumber);
+console.log(numeroInt + parseFloat(stringifiedNumber));
